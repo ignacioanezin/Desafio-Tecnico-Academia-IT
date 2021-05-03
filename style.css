@@ -1,27 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
-
-.container {
-  padding: 30px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  font-family: "Poppins", sans-serif;
-  position: relative;
+body {
+  background-color: orangered;
+  color: white;
+  margin: 0;
+  font-family: poppins;
 }
 
-.container form {
-  background: #c62828;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  top: 0;
-  left: 0;
-  right: 0;
-  border-bottom: solid black 4px;
+.container {
+  padding: 40px;
+  margin: 0 auto;
+}
+
+form {
+  text-align: center;
 }
 
 form input {
@@ -43,4 +33,62 @@ form input[type="submit"] {
   margin-left: 8px;
   background: #003566;
   color: #ffffff;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+}
+
+#pokedex {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+  padding-inline-start: 0;
+}
+
+.card {
+  list-style: none;
+  padding: 40px;
+  background-color: #f4f4f4;
+  color: #222;
+  text-align: center;
+}
+
+.card:hover {
+  animation: bounce 0.5s linear;
+}
+
+.card-title {
+  text-transform: capitalize;
+  margin-bottom: 0px;
+  font-size: 32px;
+  font-weight: normal;
+}
+.card-subtitle {
+  margin-top: 5px;
+  color: #666;
+  font-weight: lighter;
+}
+
+.card-image {
+  height: 180px;
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+
+  80% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
