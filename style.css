@@ -39,7 +39,7 @@ h2 {
 #pokedex {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
   grid-gap: 20px;
   padding-inline-start: 0;
 }
@@ -72,6 +72,7 @@ h2 {
 
 .card-image {
   height: 180px;
+  max-width: 100%;
 }
 
 @keyframes bounce {
@@ -87,5 +88,10 @@ h2 {
   }
   100% {
     transform: translateY(0);
+  }
+}
+@media screen and (max-width: 450px) {
+  #pokedex {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
 }
