@@ -95,3 +95,11 @@ h2 {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
 }
+@media screen and (max-width: 350px) {
+  .form input[type="text"] {
+    margin-bottom: 20px;
+    background: white;
+    min-width: 250px;
+    max-width: 100%;
+  }
+}

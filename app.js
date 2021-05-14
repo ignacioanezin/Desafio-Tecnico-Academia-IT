@@ -42,7 +42,7 @@ const displayPokemon = (pokemon) => {
       (pokeman) => `
   <li class="card">
     <h2 class="card-name">${pokeman.id}. ${pokeman.name}</h2>
-    <img class="card-image" src="${pokeman.image}">
+    <img class="card-image" alt="" src="${pokeman.image}">
     <p class="card-type">Tipo: ${pokeman.types}</p>
     <p class="card-xp">XP: ${pokeman.xp}</p>
     <p class="card-height">Altura: ${pokeman.height}</p>
